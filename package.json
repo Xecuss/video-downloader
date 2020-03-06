@@ -1,0 +1,21 @@
+{
+  "name": "video-downloader",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/index.js",
+  "scripts": {
+    "clean": "rm -rf ./dist/*",
+    "build": "npm run clean && tsc",
+    "test": "npm run build && node ./dist/index.js"
+  },
+  "author": "xs",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/node": "^13.7.7",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "axios": "^0.19.2"
+  }
+}
